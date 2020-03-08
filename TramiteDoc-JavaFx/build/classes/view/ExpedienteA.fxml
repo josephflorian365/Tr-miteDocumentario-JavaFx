@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="1042.0" styleClass="totus" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExpedienteController">
+   <children>
+      <TableView fx:id="expediente" fixedCellSize="0.0" layoutX="20.0" layoutY="144.0" prefHeight="369.0" prefWidth="625.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="numero" prefWidth="116.33332824707031" text="Numero" />
+            <TableColumn fx:id="fechaSalida" prefWidth="113.0" text="Fecha Ingreso" />
+            <TableColumn fx:id="asunto" prefWidth="227.0" text="Asunto" />
+            <TableColumn fx:id="estado" minWidth="0.0" prefWidth="91.0" text="Estado" />
+         </columns>
+      </TableView>
+      <Label layoutX="292.0" layoutY="24.0" text="Listado de Expedientes" textFill="#6b7880">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="661.0" layoutY="78.0" prefHeight="438.0" prefWidth="372.0">
+         <children>
+            <Button fx:id="btnAdd" layoutX="55.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#onAdd" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #C31432;" text="ADD" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNew" layoutX="55.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#onNew" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #C31432;" text="NEW" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="222.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#onUpdate" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #C31432;" text="UPDATE" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="222.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#onDelete" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #C31432;" text="DELETE" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <JFXTextField fx:id="txtnumero" layoutX="22.0" layoutY="28.0" maxWidth="238.0" minWidth="238.0" onKeyTyped="#numeroExpediente" prefHeight="31.0" prefWidth="238.0" promptText="Numero" />
+            <JFXComboBox fx:id="cmbEstado" layoutX="30.0" layoutY="270.0" prefHeight="25.0" prefWidth="164.0" promptText="ESTADO" />
+            <DatePicker fx:id="dateFecha" layoutX="27.0" layoutY="86.0" promptText="Fecha" />
+            <JFXTextArea fx:id="txtAsunto" layoutX="28.0" layoutY="133.0" maxWidth="334.0" minWidth="150.0" prefHeight="102.0" prefWidth="334.0" promptText="Asunto" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

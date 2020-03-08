@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EnvioAController">
+   <children>
+      <TableView fx:id="envio" fixedCellSize="0.0" layoutX="17.0" layoutY="284.0" onMouseClicked="#onEnvioClic" prefHeight="308.0" prefWidth="700.0">
+         <columns>
+            <TableColumn fx:id="idenv" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="iddoc" prefWidth="99.0" text="ID Documento" />
+            <TableColumn fx:id="femit" prefWidth="161.0" text="Fecha emitida" />
+            <TableColumn fx:id="recepEmp" prefWidth="134.0" text="Destinatario" />
+            <TableColumn fx:id="areaRecp" minWidth="9.0" prefWidth="117.0" text="Area de Recepcion" />
+            <TableColumn fx:id="estEnvia" prefWidth="111.0" text="Estado Envio" />
+         </columns>
+      </TableView>
+      <Label layoutX="278.0" layoutY="14.0" prefHeight="31.0" prefWidth="228.0" text="Listado de Envios" textFill="#6b7880">
+         <font>
+            <Font name="Arial Black" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="56.0" prefHeight="216.0" prefWidth="487.0">
+         <children>
+            <DatePicker fx:id="dateFecha" layoutX="26.0" layoutY="127.0" prefHeight="25.0" prefWidth="228.0" promptText="Fecha" />
+            <ComboBox fx:id="cmbDocumento" layoutX="26.0" layoutY="14.0" prefHeight="25.0" prefWidth="202.0" promptText="Documento" />
+            <ComboBox fx:id="cmbpersonal" layoutX="264.0" layoutY="14.0" prefHeight="25.0" prefWidth="202.0" promptText="Destinatario" />
+            <ComboBox fx:id="cmbArea" layoutX="26.0" layoutY="68.0" prefHeight="25.0" prefWidth="202.0" promptText="Area" />
+            <ComboBox fx:id="cmbEstado" layoutX="264.0" layoutY="68.0" prefHeight="25.0" prefWidth="202.0" promptText="Estado" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnAdd" layoutX="518.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#onAdd" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #C31432;" text="ADD" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNew" layoutX="518.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#onNew" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #C31432;" text="NEW" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="518.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#onUpdate" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #C31432;" text="UPDATE" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="518.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#onDelete" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #C31432;" text="DELETE" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

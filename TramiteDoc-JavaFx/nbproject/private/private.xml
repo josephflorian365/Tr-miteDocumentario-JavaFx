@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/LoginView.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/PrincipalView.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/controller/PrincipalViewController.java</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/ExpedienteA.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/controller/Main.java</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/PrincipalViewUsuario.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/EmpleadoA.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/DocumentoA.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/EnviosA.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/model/database/Conexion.java</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/style.css</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/AreaA.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/model/database/DatabaseMySQL.java</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/view/TipoDocA.fxml</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/controller/AreaViewController.java</file>
+            <file>file:/C:/Users/2020/Documents/NetBeansProjects/SistemadeJULIO/src/controller/LoginViewController.java</file>
+        </group>
+    </open-files>
+</project-private>

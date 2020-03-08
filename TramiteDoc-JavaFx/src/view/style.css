@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/01/2020, 05:43:05 PM
+    Author     : Julio
+*/
+.login-bg{
+    -fx-background-color: linear-gradient(to right, 
+#65FFFD, #2499EE)  
+}
+
+.btn-login{
+    -fx-background-color: #2499EE;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight:700; 
+    -fx-background-radius: 8px;
+}
+.lbl-status{
+    -fx-background-color: #2499EE;
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+    -fx-alignment: CENTER;
+    -fx-background-radius: 8px;   
+}
+
+.label-user{
+    
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+    -fx-font-size: 14px;
+    -fx-font-weight:600; 
+}
+.tab-pane{
+    
+    -fx-tab-max-height: 0px;
+}
+.tab-pane .tab-header-area{
+    visibility: hidden
+    
+    
+}
+
+
+.account-bg{
+    -fx-background-color: linear-gradient(to right, #ff4b1f, #1fddff)
+ 
+}
+
+.text-bg{
+    
+    -fx-alignment: CENTER;
+}
+
+
+.totus{
+/*    -fx-background-color:#fff*/
+    
+    
+}

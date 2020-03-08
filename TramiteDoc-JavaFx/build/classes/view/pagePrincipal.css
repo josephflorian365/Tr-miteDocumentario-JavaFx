@@ -1,0 +1,54 @@
+.parent{
+    -fx-background-color: #fff;
+}
+
+.sidebar{
+    -fx-background-color: #333645;
+    
+    
+}
+.centro{
+    
+    -fx-alignment:CENTER_LEFT; 
+}
+.btns{
+    
+    -fx-background-color: transparent;
+}
+
+
+.box{
+ -fx-border-color: #7C8184;
+ -fx-border-width: 1px 0px 0px 0px;
+ 
+}
+
+.btns:hover{
+    -fx-background-color: #202332;
+    
+}
+
+.round-label{
+    -fx-background-color: #FE7A70;
+    -fx-background-radius: 100%;
+}
+
+.card-01{
+    
+    -fx-background-color: rgba(0.00, 0.64, 0.83,0.5)
+}
+
+.round-box{
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-border-width: 5px;
+    
+}
+
+
+
+
+
+
+
+

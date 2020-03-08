@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="873.0" styleClass="totus" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmpleadoAController">
+   <children>
+      <TableView fx:id="empleado" fixedCellSize="0.0" layoutX="29.0" layoutY="361.0" prefHeight="254.0" prefWidth="808.0">
+         <columns>
+            <TableColumn fx:id="idEmpleado" minWidth="0.0" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="nomEmpleado" prefWidth="125.0" text="Nombres" />
+            <TableColumn fx:id="paterno" prefWidth="94.0" text="Ap. Paterno " />
+            <TableColumn fx:id="materno" prefWidth="94.0" text="Ap. Materno" />
+            <TableColumn fx:id="puestoEmpleado" minWidth="0.0" prefWidth="114.0" text="Puesto" />
+            <TableColumn fx:id="dniEmpleado" minWidth="5.0" prefWidth="87.0" text="DNI" />
+            <TableColumn fx:id="AreaEmpleado" prefWidth="107.0" text="Area" />
+            <TableColumn fx:id="estempleado" prefWidth="69.0" text="Estado" />
+            <TableColumn fx:id="sexos" prefWidth="68.0" text="SEXO" />
+            <TableColumn fx:id="users" prefWidth="75.0" text="USER" />
+            <TableColumn fx:id="contraseña" prefWidth="75.0" text="PASSWORD" />
+         </columns>
+      </TableView>
+      <Label layoutX="337.0" layoutY="41.0" prefHeight="21.0" prefWidth="321.0" text="Listado de Empleados Registrados">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="34.0" layoutY="80.0" prefHeight="254.0" prefWidth="624.0">
+         <children>
+            <JFXTextField fx:id="txtnom" layoutX="23.0" layoutY="23.0" maxWidth="238.0" minWidth="219.0" onKeyTyped="#nombreEmpleado" prefHeight="31.0" prefWidth="219.0" promptText="Nombres" />
+            <JFXComboBox fx:id="cmbEstado" layoutX="274.0" layoutY="131.0" prefHeight="25.0" prefWidth="141.0" promptText="ESTADO" />
+            <JFXTextField fx:id="txtapepat" layoutX="22.0" layoutY="72.0" maxWidth="238.0" minWidth="153.0" onKeyTyped="#apellidoPaternoEmp" prefHeight="31.0" prefWidth="153.0" promptText="Apellido Paterno" />
+            <JFXTextField fx:id="txtapemat" layoutX="270.0" layoutY="72.0" maxWidth="238.0" minWidth="153.0" onKeyTyped="#apellidoMaternoEmp" prefHeight="31.0" prefWidth="153.0" promptText="Apellido Materno" />
+            <JFXTextField fx:id="txtpos" layoutX="22.0" layoutY="131.0" maxWidth="238.0" minWidth="213.0" onKeyTyped="#PuestoEmp" prefHeight="31.0" prefWidth="213.0" promptText="Puesto de trabajo" />
+            <JFXTextField fx:id="txtdni" layoutX="270.0" layoutY="23.0" maxWidth="238.0" minWidth="141.0" onKeyPressed="#dniEmpleado" prefHeight="31.0" prefWidth="141.0" promptText="DNI" />
+            <JFXRadioButton fx:id="rdmasc" layoutX="243.0" layoutY="214.0" text="Femenino">
+               <toggleGroup>
+                  <ToggleGroup fx:id="sexo" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="rdfem" layoutX="330.0" layoutY="214.0" text="Masculino" toggleGroup="$sexo" />
+            <Label layoutX="326.0" layoutY="180.0" text="SEXO" />
+            <JFXTextField fx:id="user" layoutX="443.0" layoutY="23.0" promptText="Pickname" />
+            <JFXTextField fx:id="pass" layoutX="443.0" layoutY="72.0" promptText="Contraseña" />
+            <ComboBox fx:id="cmbAreas" layoutX="443.0" layoutY="150.0" prefWidth="150.0" promptText="Area" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnUpdate" layoutX="665.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#onUpdate" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #C31432;" text="UPDATE" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNew" layoutX="665.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#onNew" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #C31432;" text="NEW" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="665.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#onAdd" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #C31432;" text="ADD" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="665.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#onDelete" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: #C31432;" text="DELETE" textFill="#eeeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

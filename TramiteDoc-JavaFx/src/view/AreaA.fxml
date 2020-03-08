@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="892.0" style="-: #5a5d56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AreaViewController">
+   <children>
+      <TableView fx:id="tableArea" fixedCellSize="0.0" layoutX="22.0" layoutY="82.0" prefHeight="279.0" prefWidth="465.0">
+         <columns>
+            <TableColumn fx:id="idArea" minWidth="0.0" prefWidth="0.0" text="ID" />
+            <TableColumn fx:id="nomArea" prefWidth="292.0" text="NOMBRE" />
+            <TableColumn fx:id="estArea" prefWidth="172.0" text="ESTADO" />
+         </columns>
+      </TableView>
+      <Label layoutX="184.0" layoutY="39.0" text="LISTADO DE AREAS" textFill="#6b7880">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="503.0" layoutY="-1.0" prefHeight="387.0" prefWidth="393.0">
+         <children>
+            <Button fx:id="btnAdd" layoutX="38.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#onAdd" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #C31432;" text="ADD" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="38.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#onUpdate" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #C31432;" text="UPDATE" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="245.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#onDelete" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #C31432;" text="DELETE" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnNuevo" layoutX="245.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#onNew" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #C31432;" text="NEW" textFill="#eeeeee">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <JFXTextField fx:id="txtnomarea" layoutX="32.0" layoutY="75.0" maxWidth="296.0" minWidth="289.0" onKeyTyped="#nombreArea" prefHeight="31.0" prefWidth="296.0" promptText="Nombre del Area" />
+            <JFXComboBox fx:id="cmbEstado" layoutX="35.0" layoutY="152.0" prefHeight="25.0" prefWidth="289.0" promptText="Estado" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

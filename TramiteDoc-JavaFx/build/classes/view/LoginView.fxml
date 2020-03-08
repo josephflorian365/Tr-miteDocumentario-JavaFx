@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginViewController">
+   <children>
+      <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="466.0" styleClass="login-bg" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutX="38.0" layoutY="193.0" prefHeight="358.0" prefWidth="388.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow color="#222121" />
+               </effect>
+               <children>
+                  <TabPane fx:id="tabPaneLogin" layoutX="13.0" layoutY="96.0" prefHeight="257.0" prefWidth="363.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab fx:id="tabAdmin" text="ADMIN">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXTextField fx:id="adminUser" labelFloat="true" layoutX="24.0" layoutY="44.0" maxWidth="318.0" minWidth="248.0" prefHeight="31.0" prefWidth="318.0" promptText="Admin Username">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXPasswordField fx:id="adminPass" labelFloat="true" layoutX="24.0" layoutY="110.0" maxWidth="320.0" minWidth="284.0" prefHeight="31.0" prefWidth="318.0" promptText="Admin Password">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                    <JFXButton fx:id="btnLogin" layoutX="142.0" layoutY="167.0" onMouseClicked="#openLogin" prefHeight="29.0" prefWidth="86.0" styleClass="btn-login" text="LOGIN" />
+                                    
+
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                      <Tab fx:id="tabUser" text="USER">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <JFXTextField fx:id="txtusuario" labelFloat="true" layoutX="24.0" layoutY="44.0" maxWidth="318.0" minWidth="248.0" prefHeight="31.0" prefWidth="318.0" promptText="Username">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXPasswordField fx:id="txtpasswordusu" labelFloat="true" layoutX="24.0" layoutY="110.0" maxWidth="320.0" minWidth="284.0" prefHeight="31.0" prefWidth="318.0" promptText="Password">
+                                       <font>
+                                          <Font name="System Bold Italic" size="13.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                    <JFXButton fx:id="btnuser" layoutX="142.0" layoutY="167.0" onMouseClicked="#openUser" prefHeight="29.0" prefWidth="86.0" styleClass="btn-login" text="LOGIN" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+                  <Group>
+                     <children>
+                        <Pane fx:id="slidingPane" layoutX="26.0" layoutY="49.0" prefHeight="35.0" prefWidth="337.0">
+                           <children>
+                              <Label fx:id="lblAdmin" onMouseClicked="#openAdminTab" prefHeight="35.0" prefWidth="150.0" styleClass="label-user" text="ADMINISTRATOR">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="lblUser" layoutX="187.0" onMouseClicked="#openUserTab" prefHeight="35.0" prefWidth="150.0" styleClass="label-user" text="USER">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label fx:id="lblStatus" layoutX="26.0" layoutY="49.0" prefHeight="35.0" prefWidth="159.0" styleClass="lbl-status" text="ADMINISTRATOR">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+            <Label layoutX="136.0" layoutY="122.0" text="DOQINTER">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="137.0" fitWidth="150.0" layoutX="154.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/doqinter.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
